@@ -1,0 +1,18 @@
+{
+  "name": "express_to_learn_docker",
+  "version": "1.0.0",
+  "description": "projeto para exercitar e aprender sobre docker",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "adam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
