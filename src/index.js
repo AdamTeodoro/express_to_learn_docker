@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     const htmlPage =  `
         <!DOCTYPE html>
         <html lang="pt-br">
@@ -30,10 +30,8 @@ app.get('/version', (req, res) => {
     return;
 });
 
-/**
- * listen in local web
- */
-// app.listen(3000, '0.0.0.0', () => console.log("Listen in: http://localhost:3000"));
+const port = 3000;
 
-app.listen(9200, () => console.log("Listen in: http://localhost:9200"));
+// app.listen(port, '0.0.0.0', () => console.log(`Listen in: http://localhost:${port}`));
+app.listen(port, () => console.log(`Listen in: http://localhost:${port}`));
 
